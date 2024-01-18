@@ -3,6 +3,7 @@ FROM ellizeurs/torch-darts-gpu:cuda11.7
 
 # Instale dependências adicionais
 RUN pip install jupyterlab
+RUN pip install ipywidgets
 
 # Exponha a porta do Jupyter Lab
 EXPOSE 10101
