@@ -9,4 +9,4 @@ RUN pip install ipywidgets
 EXPOSE 10101
 
 # Inicie o Jupyter Lab ao iniciar o contêiner
-CMD ["jupyter", "lab", "--port=10101", "--no-browser", "--allow-root"]
+CMD ["jupyter", "lab", "--port=10101", "--ServerApp.iopub_msg_rate_limit=1000000000","--no-browser", "--allow-root"]
